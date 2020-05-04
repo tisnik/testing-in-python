@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# spuštění jednotkových testů
+
+python3 -B test.py
