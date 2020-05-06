@@ -1,0 +1,24 @@
+*** test1 ***
+function1 returns: *mocked
+
+*** test2 ***
+function1
+function2
+function3
+function1 returns: function1 function2 function3
+
+*** test3 ***
+function1
+function1 returns: function1 *mocked
+
+*** test4 ***
+function1
+function2
+function1 returns: function1 function2 *mocked
+
+*** test5 ***
+function1
+function2
+function3
+function1 returns: function1 function2 function3
+
