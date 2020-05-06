@@ -1,0 +1,19 @@
+*** test1 ***
+add returns: 42
+mocked function called: True
+add returns: 42
+mocked function called: True
+calls:  [call(1, 2), call(100, 100)]
+
+*** test2 ***
+add returns: 42
+mocked function called: True
+Traceback (most recent call last):
+  File "test.py", line 41, in <module>
+    test2()
+  File "test.py", line 34, in test2
+    mocked_function.assert_called_with(1, 1)
+  File "/usr/lib/python3.4/unittest/mock.py", line 771, in assert_called_with
+    raise AssertionError(_error_message()) from cause
+AssertionError: Expected call: add_implementation(1, 1)
+Actual call: add_implementation(1, 2)
