@@ -1,0 +1,29 @@
+*** test1 ***
+function1 returns: *mocked*
+mocked function called: True
+
+*** test2 ***
+function1
+function2
+function3
+function1 returns: function1 function2 function3
+mocked function called: False
+
+*** test3 ***
+function1
+function1 returns: function1 *mocked*
+mocked function called: True
+
+*** test4 ***
+function1
+function2
+function1 returns: function1 function2 *mocked*
+mocked function called: True
+
+*** test5 ***
+function1
+function2
+function3
+function1 returns: function1 function2 function3
+mocked function called: False
+
