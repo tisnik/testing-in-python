@@ -1,0 +1,30 @@
+*** test1 ***
+compute returns: 14
+
+*** test1 ***
+compute returns: 130
+mocked function 'f1' called: True
+calls:  [call(10)]
+
+
+*** test3 ***
+compute returns: 9
+mocked function 'f1' called: True
+calls:  [call(1)]
+
+mocked function 'f2' called: True
+calls:  [call(2)]
+
+
+*** test4 ***
+compute returns: 0
+mocked function 'f1' called: True
+calls:  [call(100)]
+
+mocked function 'f2' called: True
+calls:  [call(200)]
+
+mocked function 'f3' called: True
+calls:  [call(300)]
+
+
