@@ -24,7 +24,7 @@ def side_effect_handler():
 
 @patch('application.function1', side_effect=side_effect_handler)
 def test3(mocked_function):
-    """Druhý test používá stub test double - náhradu volané funkce."""
+    """Třetí test používá stub test double - náhradu volané funkce."""
     print(application.function1())
 
 
@@ -42,7 +42,7 @@ def side_effect_handler_2():
 
 @patch('application.function1', return_value=42, side_effect=side_effect_handler_2)
 def test5(mocked_function):
-    """Čtvrtý test se opět snaží zkombinovat fake a stub."""
+    """Pátý test se opět snaží zkombinovat fake a stub."""
     print(application.function1())
 
 
