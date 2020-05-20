@@ -6,6 +6,7 @@ from application import Application
 
 
 def test1():
+    """První test neprovádí prakticky žádné reálné kontroly, jen zavolá testovanou metodu."""
     app = Application()
     print("method1 returns: {v}".format(v=app.method1()))
 
