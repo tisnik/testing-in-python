@@ -1,3 +1,5 @@
+"""Modul s funkcí, která má být testována/mockována."""
+
 from module3 import *
 
 
