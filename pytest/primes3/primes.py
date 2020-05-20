@@ -7,11 +7,11 @@
 def primes2(limit):
     """Výpočet seznamu prvočísel až do zadaného limitu."""
     # okrajový případ
-    if limit < 2: # pragma: no cover
+    if limit < 2:  # pragma: no cover
         return []
 
     # druhý případ - 2 je speciálním prvočíslem
-    if limit < 3: # pragma: no cover
+    if limit < 3:  # pragma: no cover
         return [2]
 
     lmtbf = (limit - 3) // 2
