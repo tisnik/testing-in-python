@@ -13,6 +13,7 @@ def test1():
 
 @patch('application.Application.method2', return_value=42)
 def test2(mocked_method):
+    """Druhý test zjištuje, zda se volala mockovaná metoda či nikoli."""
     app = Application()
     # vytiskneme informaci o tom, zda se mockovaná metoda zavolala
     print("mocked method called: {c}".format(c=mocked_method.called))
