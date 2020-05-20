@@ -5,6 +5,7 @@ class Application:
     """Aplikace s implementací veškeré logiky, která se bude testovat/mockovat."""
 
     def __init__(self):
+        """Konstruktor."""
         pass
 
     def method1(self):
