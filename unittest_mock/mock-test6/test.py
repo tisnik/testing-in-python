@@ -23,6 +23,7 @@ def test2(mocked_method):
 
 
 def side_effect_handler():
+    """Implementace handleru volaného namísto mockované funkce."""
     print("side_effect_handler method called")
     return -1
 
