@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# spuštění jednotkových testů
+pytest -s > pytest.txt
+
+pytest -v > pytest_verbose.txt
+
+pytest -v -s > pytest_verbose_no_capture.txt
+
+pytest -v -s --print-relative-time  > pytest_times.txt
