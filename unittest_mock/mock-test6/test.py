@@ -30,6 +30,7 @@ def side_effect_handler():
 
 @patch('application.Application.method2', side_effect=side_effect_handler)
 def test3(mocked_method):
+    """Použití handleru volaného namísto mockované funkce."""
     app = Application()
     # vytiskneme informaci o tom, zda se mockovaná metoda zavolala
     print("mocked method called: {c}".format(c=mocked_method.called))
