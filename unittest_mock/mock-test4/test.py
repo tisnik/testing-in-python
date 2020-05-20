@@ -20,6 +20,7 @@ def test2(mocked_function):
 
 
 def side_effect_handler():
+    """Implementace handleru - stub funkce nahrazované mockem."""
     print("side_effect_handler function called")
     return -1
 
