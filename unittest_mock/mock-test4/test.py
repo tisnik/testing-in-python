@@ -26,6 +26,7 @@ def side_effect_handler():
 
 @patch('application.function2', side_effect=side_effect_handler)
 def test3(mocked_function):
+    """Třetí test zjištuje, zda se volá side_effect_handler."""
     # vytiskneme informaci o tom, zda se mockovaná funkce zavolala
     print("mocked function called: {c}".format(c=mocked_function.called))
     print(function1())
