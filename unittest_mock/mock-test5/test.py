@@ -12,6 +12,7 @@ def test1():
 
 @patch('application.function2', return_value=42)
 def test2(mocked_function):
+    """Druhý test zjištuje, zda se volala mockovaná funkce či nikoli."""
     # vytiskneme informaci o tom, zda se mockovaná funkce zavolala
     print("mocked function called: {c}".format(c=mocked_function.called))
     print("function1 returns: {v}".format(v=application.function1()))
