@@ -1,6 +1,7 @@
 def f1(x):
     return x
 
+
 def f2(x):
     return 2 * x
 
