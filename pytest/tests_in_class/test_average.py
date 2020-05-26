@@ -85,4 +85,5 @@ class TestAverageFunction:
     def test_average_five_values(self, input_values, expected_result):
         """Otestování výpočtu průměru."""
         result = average(input_values)
-        assert result == expected_result, "Očekávaná hodnota {}, vráceno {}".format(expected_result, result)
+        assert result == expected_result, "Očekávaná hodnota {}, vráceno {}".format(
+                expected_result, result)
