@@ -35,7 +35,7 @@ def test4(mocked_function):
 
 
 def side_effect_handler_2():
-    """Implementace handleru - stub funkce nahrazované mockem, který ovšem ovlivňuje chování testu."""
+    """Implementace handleru: stub funkce nahrazované mockem, který ovlivňuje chování testu."""
     print("side_effect function called")
     return DEFAULT
 
