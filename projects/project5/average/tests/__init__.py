@@ -1,0 +1,1 @@
+"""Implementace jednotkových testů."""
