@@ -2,7 +2,7 @@
 
 """Vstupní bod do testované aplikace."""
 
-from average import avg
+from src.average import avg
 
 
 if __name__ == '__main__':
