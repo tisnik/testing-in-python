@@ -12,7 +12,7 @@ run:
 	${PYTHON} main.py
 
 test:
-	${TEST_TOOL} -v tests
+	${TEST_TOOL} -v
 
 coverage:
 	${TEST_TOOL} --cov=average --cov-report term-missing
