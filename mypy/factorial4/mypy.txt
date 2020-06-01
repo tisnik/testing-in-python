@@ -1,0 +1,2 @@
+factorial.py:7: error: Incompatible return value type (got "None", expected "int")
+Found 1 error in 1 file (checked 1 source file)
