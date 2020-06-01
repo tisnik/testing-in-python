@@ -1,0 +1,3 @@
+factorial.py:12: error: Unsupported operand types for * ("int" and "None")
+factorial.py:12: note: Right operand is of type "Optional[int]"
+Found 1 error in 1 file (checked 1 source file)
