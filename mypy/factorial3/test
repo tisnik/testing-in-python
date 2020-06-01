@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# spuštění jednotkových testů
+pytest -v > pytest.txt
+
+# specifikace balíčku
+pytest --cov=factorial > coverage.txt
