@@ -1,5 +1,6 @@
 """Test, zda je vstupní hodnota prvočíslem."""
 
+
 def is_prime(x):
     """Test, zda je vstupní hodnota prvočíslem."""
     if x == 2:
