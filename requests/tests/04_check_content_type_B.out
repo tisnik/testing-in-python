@@ -1,0 +1,39 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.6, pytest-5.4.2, py-1.5.2, pluggy-0.13.1 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/ptisnovs/src/python/testing-in-python/requests/tests
+plugins: print-0.1.3, voluptuous-1.0.2
+collecting ... collected 1 item
+
+04_check_content_type_B.py::test_get_method_for_existing_endpoint FAILED [100%]
+
+=================================== FAILURES ===================================
+____________________ test_get_method_for_existing_endpoint _____________________
+
+    def test_get_method_for_existing_endpoint():
+        # adresa s testovaci REST API sluzbou
+        URL = "http://httpbin.org/get"
+    
+        # poslani HTTP dotazu typu GET
+        response = requests.get(URL)
+    
+        # precteni hlavicek
+        headers = response.headers
+    
+        assert response is not None
+        assert response.ok
+        assert response.status_code == 200
+    
+        # test existence hlavicky
+        assert "content-type" in headers
+    
+        # kontrola obsahu hlavicky
+>       assert headers["content-type"] == "text/plain"
+E       AssertionError: assert 'application/json' == 'text/plain'
+E         - text/plain
+E         + application/json
+
+04_check_content_type_B.py:25: AssertionError
+=========================== short test summary info ============================
+FAILED 04_check_content_type_B.py::test_get_method_for_existing_endpoint - As...
+============================== 1 failed in 0.61s ===============================
