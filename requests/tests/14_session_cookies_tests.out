@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.6, pytest-5.4.2, py-1.5.2, pluggy-0.13.1 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/ptisnovs/src/python/testing-in-python/requests/tests
+plugins: print-0.1.3, voluptuous-1.0.2
+collecting ... collected 6 items
+
+14_session_cookies_tests.py::test_set_cookie_1 PASSED                    [ 16%]
+14_session_cookies_tests.py::test_set_cookie_2 PASSED                    [ 33%]
+14_session_cookies_tests.py::test_set_cookie_3 PASSED                    [ 50%]
+14_session_cookies_tests.py::test_delete_cookie_1 PASSED                 [ 66%]
+14_session_cookies_tests.py::test_delete_cookie_2 PASSED                 [ 83%]
+14_session_cookies_tests.py::test_delete_cookie_3 PASSED                 [100%]
+
+============================== 6 passed in 3.03s ===============================
