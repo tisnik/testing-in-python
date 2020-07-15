@@ -21,7 +21,7 @@ def expect_content_type(response, content_type):
     assert headers["content-type"] == content_type
 
 
-def test_get_method_for_existing_endpoint():
+def test_post_method_for_existing_endpoint():
     # adresa s testovaci REST API sluzbou
     URL = "http://httpbin.org/post"
 
