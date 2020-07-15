@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.6, pytest-5.4.2, py-1.5.2, pluggy-0.13.1 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/ptisnovs/src/python/testing-in-python/requests/tests
+plugins: print-0.1.3, voluptuous-1.0.2
+collecting ... collected 2 items
+
+03_refactor_check_status_test.py::test_get_method_for_existing_endpoint PASSED [ 50%]
+03_refactor_check_status_test.py::test_get_method_for_missing_endpoint FAILED [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_get_method_for_missing_endpoint _____________________
+
+    def test_get_method_for_missing_endpoint():
+        # adresa s testovaci REST API sluzbou
+        URL = "http://httpbin.org/neexistuje"
+    
+        # poslani HTTP dotazu typu GET
+        response = requests.get(URL)
+    
+        # zakladni test odpovedi
+>       expect_ok_response(response)
+
+03_refactor_check_status_test.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+response = <Response [404]>
+
+    def expect_ok_response(response):
+        assert response is not None
+>       assert response.ok
+E       assert False
+E        +  where False = <Response [404]>.ok
+
+03_refactor_check_status_test.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED 03_refactor_check_status_test.py::test_get_method_for_missing_endpoint
+========================= 1 failed, 1 passed in 0.88s ==========================
