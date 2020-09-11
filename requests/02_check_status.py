@@ -13,8 +13,6 @@ response = requests.get(URL)
 print(response.status_code)
 print(response.ok)
 
-
-
 # nyni vyzkousime neexistujici endpoint:
 
 # adresa s testovaci REST API sluzbou
