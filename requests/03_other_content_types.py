@@ -26,4 +26,3 @@ headers = response.headers
 
 # vypis typu internetoveho media
 print(headers.get("content-type"))
-
