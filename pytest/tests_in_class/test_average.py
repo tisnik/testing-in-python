@@ -36,7 +36,7 @@ class TestAverageFunction:
         assert result == expected, "Očekávaná hodnota {}, vráceno {}".format(expected, result)
 
     @pytest.mark.parametrize("values,expected",
-            testdata, ids=["1,1", "1,2", "0,1", "1,2,3", "0,10"])
+                             testdata, ids=["1,1", "1,2", "0,1", "1,2,3", "0,10"])
     def test_average_basic_2(self, values, expected):
         """Otestování výpočtu průměru."""
         result = average(values)
