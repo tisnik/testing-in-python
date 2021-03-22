@@ -28,4 +28,5 @@ def call_add(context, x, y):
 
 @then('I should get {result:d} as a result')
 def check_integer_result(context, result):
-    assert context.result == result, "Expected result: {e}, returned value: {r}".format(e=result, r=context.result)
+    assert context.result == result, \
+            "Expected result: {e}, returned value: {r}".format(e=result, r=context.result)
